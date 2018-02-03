@@ -44,9 +44,8 @@ class Board
 end
 
 class Player
-  attr_accessor :name, :marker
-  def initialize(name,marker)
-    @name = name
+  attr_accessor :marker
+  def initialize(marker)
     @marker = marker
     @score = 0
   end
@@ -54,8 +53,8 @@ end
 
 board = Board.new
 
-player1 = Player.new("Bruno", "X")
-player2 = Player.new("Computer","O")
+player1 = Player.new("X")
+player2 = Player.new("O")
 
 board.show_board
 
